@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'web/styles.css' %}">
+
+    <title>
+        {% block title %}
+            My Website
+        {% endblock %}
+    </title>
+</head>
+
+<body>
+
+    <nav>
+        
+        <ul>
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+
+            <li>
+                <a href="/proyectos/">proyectos</a>
+            </li>
+
+            <li>
+                <a href="/contacto/">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>
+            {% block header %}
+                Gonzalo dev
+            {% endblock %}
+        </h1>
+    </header>
+
+
+   <main class="content">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+</body>
+
+</html>
