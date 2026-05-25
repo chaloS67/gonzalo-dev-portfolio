@@ -1,0 +1,32 @@
+{% extends 'web/base.html' %}
+
+{% block content %}
+
+<div class="card calculadora-card">
+    <h1>Calculadora de francos </h1>
+
+<form method="POST" class="form-francos">
+    {% csrf_token %}
+
+    <input type="date" name="fecha" required>
+
+    <select name="cantidad">
+        <option value="1">1 franco</option>
+        <option value="2">2 francos</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+</form>
+
+{% if francos %}
+
+    <h3>Proximos francos</h3>
+    <ul>
+        {% for fecha in francos %}
+          <li>{{ fecha|date:"d/m/Y - l" }}</li>
+        {% endfor %}
+    </ul>
+   
+{% endif %}    
+</div>
+{% endblock %}

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    background-color: #0f172a;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 20px;
+}
+
+.content {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #1e293b;
+    padding: 15px;
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 20px;
+
+    margin: 0;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+
+    color: #38bdf8;
+}
+
+.card {
+
+    background-color: #1e293b;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e293b;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.calculadora-card {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #111827;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.form-francos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-francos label {
+    font-weight: bold;
+    color: white;
+}
+
+.form-francos input,
+.form-francos select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1f2937;
+    color: white;
+    font-size: 16px;
+}
+
+.form-francos button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-francos button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+}
+
+.lista-francos {
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-francos li {
+    background-color: #1f2937;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
