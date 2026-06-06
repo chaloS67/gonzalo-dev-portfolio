@@ -1,21 +1,64 @@
 {% extends 'web/base.html' %}
 
-{% block contenido %}
-
-{% block title %}
-            My Website
-{% endblock %}
-
 {% block content %}
 
-    <h2>Bienvenido</h2>
+<section class="identity-section">
 
-    <p>Estoy aprendiendo desarrollo web con Django y Python.
-    Este sitio forma parte de mis prácticas de Programación Web.</p>
+    <div class="identity-content">
+        <h1>Gonzalo Sampini</h1>
+        <p class="role">Estudiante de Desarrollo de Software</p>
+        <p class="focus">Python · Django · Web</p>
 
+        <div class="secondary-buttons">
+            <button onclick="showSection('sobr')">Sobre mi</button>
+            <button onclick="showSection('exp')">Experiencia</button>
+            <button onclick="showSection('edu')">Formación</button>
+            <button onclick="showSection('cur')">Cursos</button>
+        </div>
 
-{% endblock %}
+        <div class="dynamic-content">
 
+            <div id="sobr" class="info-panel">
+                <h3>Sobre mi</h3>
+                  <p>
+                    Nací en 1990 y actualmente resido en Rawson chubut Argentina. 
+                    Estudio Desarrollo de Software en la Universidad de Chubut y actualmente curso el 3° año.
+                    Trabajo en una estación de servicios mientras construyo mi camino hacia el desarrollo profesional en IT.
+                </p>
 
+                <p>
+                    La combinación entre estudio y trabajo me permitió desarrollar disciplina, constancia y capacidad de adaptación.
+                    Me enfoco en Python, Django y desarrollo web, creando proyectos que refuercen mis conocimientos técnicos.
+                </p>
+            </div>
+
+            <div id="exp" class="info-panel">
+                <h3>Experiencia Laboral</h3>
+                <p>
+                    Playero – Estación Axion (2021 – Actualidad)<br>
+                    Atención al cliente, tareas operativas y responsabilidad diaria.
+                </p>
+            </div>
+
+            <div id="edu" class="info-panel">
+                <h3>Formación Académica</h3>
+                <p>
+                    Tecnicatura en Desarrollo de Software – Universidad del Chubut<br>
+                    Actualmente cursando 3° año.
+                </p>
+            </div>
+
+            <div id="cur" class="info-panel">
+                <h3>Cursos y Capacitaciones</h3>
+                <p>
+                    Python · Django · Desarrollo Web
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+  
 
 {% endblock %}

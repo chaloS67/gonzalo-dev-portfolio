@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
     background-color: #0f172a;
-    color: white;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -25,7 +25,7 @@ header {
 
 nav {
     background-color: #1e293b;
-    padding: 15px;
+    padding: 14px;
 }
 
 nav ul {
@@ -70,14 +70,14 @@ nav a:hover {
 
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 footer {
     background-color: #1e293b;
     padding: 10px;
     text-align: center;
-    margin-top: 30px;
+    margin: 0px;
 }
 
 .calculadora-card {
@@ -138,4 +138,74 @@ footer {
     padding: 12px;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.identity-section {
+    min-height: calc(100vh-60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    text-align: center;
+    padding: 40px;
+}
+
+.identity-content h1 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+
+.role {
+    font-size: 1.4rem;
+    color: #38bdf8;
+}
+
+.focus {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.secondary-buttons {
+    margin-top: 30px;
+}
+
+.secondary-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.secondary-buttons button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.dynamic-content {
+    margin-top: 40px;
+    min-height: 120px;
+}
+
+.info-panel {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+}
+.info-panel p {
+    background: rgba(255,255,255,0.04);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.info-panel.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
